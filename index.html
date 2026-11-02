@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Serviciu">
+<title>Serviciu pe școală 2026–2027</title>
+<style>
+:root{--bg:#f6f5f1;--card:#fff;--tx:#1d1d1b;--mut:#6b6b66;--bd:#e3e1da;--g:#1d7a5f;--l:#b4541c;--me:#f2c94c;--tod:#2b5fd9;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#131412;--card:#1e1f1c;--tx:#efeee9;--mut:#9a9990;--bd:#33342f;--g:#4fc19c;--l:#f08a52;--me:#a8851a;--tod:#7ba2ff}}
+:root[data-theme="dark"]{--bg:#131412;--card:#1e1f1c;--tx:#efeee9;--mut:#9a9990;--bd:#33342f;--g:#4fc19c;--l:#f08a52;--me:#a8851a;--tod:#7ba2ff}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.4 -apple-system,system-ui,"Segoe UI",Roboto,sans-serif;-webkit-text-size-adjust:100%}
+.w{max-width:560px;margin:0 auto;padding:12px 12px 32px}
+h1{font-size:18px;margin:4px 2px 10px}
+.row{display:flex;gap:8px;margin-bottom:10px}
+select{flex:1;min-width:0;font:inherit;padding:9px 10px;border-radius:10px;border:1px solid var(--bd);background:var(--card);color:var(--tx)}
+.seg{display:flex;background:var(--card);border:1px solid var(--bd);border-radius:10px;overflow:hidden;margin-bottom:10px}
+.seg button{flex:1;border:0;background:none;color:var(--mut);font:inherit;font-size:14px;padding:9px 4px}
+.seg button.on{background:var(--tx);color:var(--bg);font-weight:600}
+.nav{display:flex;align-items:center;justify-content:space-between;margin:6px 0}
+.nav b{font-size:17px;text-transform:capitalize}
+.nav button{width:44px;height:40px;border:1px solid var(--bd);border-radius:10px;background:var(--card);color:var(--tx);font-size:20px}
+.nav button:disabled{opacity:.3}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.dh{text-align:center;font-size:12px;color:var(--mut);padding:2px 0}
+.c{aspect-ratio:1/1.05;border-radius:10px;background:var(--card);border:1px solid var(--bd);padding:4px;display:flex;flex-direction:column;justify-content:space-between;font-size:13px;position:relative;cursor:pointer}
+.c.e{background:transparent;border-color:transparent;cursor:default}
+.c.off{opacity:.45}
+.c.we{background:transparent;border-style:dashed}
+.c.tod .n{background:var(--tod);color:#fff;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;margin:-2px 0 0 -2px}
+.c.sel{outline:2px solid var(--tx);outline-offset:1px}
+.c.me{background:var(--me)}
+.dots{display:flex;gap:3px;flex-wrap:wrap}
+.d{width:8px;height:8px;border-radius:50%}
+.d.g{background:var(--g)}.d.l{background:var(--l)}
+.nt{font-size:9px;line-height:1;color:var(--mut)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:12px 14px;margin-top:12px}
+.card h2{font-size:15px;margin:0 0 8px;text-transform:capitalize}
+.sc{margin:8px 0 0}.sc small{display:block;font-weight:600;font-size:12px;letter-spacing:.03em;text-transform:uppercase}
+.sc.g small{color:var(--g)}.sc.l small{color:var(--l)}
+.sc div{padding:2px 0}.sc .hl{font-weight:700;background:var(--me);border-radius:6px;padding:2px 6px;display:inline-block}
+.mut{color:var(--mut);font-size:14px}
+.up{list-style:none;margin:0;padding:0}.up li{display:flex;justify-content:space-between;padding:7px 0;border-top:1px solid var(--bd);font-size:15px}.up li:first-child{border-top:0}
+.tag{font-size:12px;font-weight:600}.tag.g{color:var(--g)}.tag.l{color:var(--l)}
+.leg{display:flex;gap:14px;font-size:12px;color:var(--mut);margin-top:10px}
+.leg span{display:flex;align-items:center;gap:5px}
+.btn{margin-top:8px;border:1px solid var(--bd);background:none;color:var(--mut);font:inherit;font-size:13px;border-radius:8px;padding:5px 10px}
+body{background:linear-gradient(180deg,var(--tint,transparent),transparent 380px),var(--bg)}
+.w{position:relative;z-index:1}
+.ban{border-radius:14px;padding:14px 10px;text-align:center;margin:2px 0 8px}
+.chip{display:inline-block;background:rgba(0,0,0,.42);color:#fff;font-weight:700;font-size:16px;padding:6px 14px;border-radius:999px}
+.em{position:absolute;top:2px;right:3px;font-size:13px;line-height:1}
+#fall{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:5}
+#fall span{position:absolute;top:-8%;opacity:.7;animation:fall linear infinite}
+#fall span.rs{top:auto;bottom:-8%;animation-name:rise}
+@keyframes fall{to{transform:translate3d(var(--dx,0),115vh,0) rotate(300deg)}}
+@keyframes rise{to{transform:translate3d(var(--dx,0),-115vh,0) rotate(30deg)}}
+</style>
+</head>
+<body>
+<div id="fall"></div>
+<div class="w">
+<h1>Serviciu pe școală · 2026–2027</h1>
+<div class="seg" id="seg"><button data-k="a" class="on">Ambele</button><button data-k="g">Gimnaziu</button><button data-k="l">Liceu</button></div>
+<div class="row"><select id="who"><option value="">Arată toate persoanele</option></select></div>
+<div class="ban" id="ban" hidden></div>
+<div class="nav"><button id="prev" aria-label="Luna precedentă">‹</button><b id="mt"></b><button id="next" aria-label="Luna următoare">›</button></div>
+<div class="grid" id="g"></div>
+<div class="leg"><span><i class="d g"></i>Gimnaziu</span><span><i class="d l"></i>Liceu</span><span><i class="d" style="background:var(--me)"></i>Zilele mele</span></div>
+<div class="card" id="det"></div>
+<div class="card" id="upc" hidden></div>
+</div>
+<script>
+const D={"n":["Alexandru Maria","Blaga Maria Luminița","Blanaru V. Florentin","Boldijer Marcel","Cotet Iulia","Căpriță Adrian","Dinu Maria Irina","Dumitrache Alina","Dumitrache Florica","Ioniță Mădălina","Mușat Doina","Nichita Georgiana","Olteanu Daniela","Onel Laura","Oprea Emilia","Pascu Ionela","Radu Beniamin","Roșca Simona","Stănescu Daniela","Toma Dumitru Mitel","Tănase Elena Rodica"],"g":{"2026-09-08":[1,20],"2026-09-09":[20,9],"2026-09-10":[20,11],"2026-09-11":[1,20],"2026-09-14":[20,0],"2026-09-15":[1,20],"2026-09-16":[20,0],"2026-09-17":[20,9],"2026-09-18":[1,20],"2026-09-21":[4,9],"2026-09-22":[14,1],"2026-09-23":[2,3],"2026-09-24":[7,0],"2026-09-25":[15,13],"2026-09-28":[0,3],"2026-09-29":[12,13],"2026-09-30":[8,17],"2026-10-01":[20,0],"2026-10-02":[13,15],"2026-10-06":[1,13],"2026-10-07":[3,2],"2026-10-08":[20,7],"2026-10-09":[18,20],"2026-10-12":[0,4],"2026-10-13":[14,12],"2026-10-14":[17,8],"2026-10-15":[13,16],"2026-10-16":[0,15],"2026-10-19":[3,9],"2026-10-20":[0,13],"2026-10-21":[8,3],"2026-10-22":[11,12],"2026-10-23":[9,18],"2026-11-02":[17,0],"2026-11-03":[12,14],"2026-11-04":[2,3],"2026-11-05":[12,11],"2026-11-06":[18,20],"2026-11-09":[3,13],"2026-11-10":[13,1],"2026-11-11":[8,17],"2026-11-12":[9,16],"2026-11-13":[15,13],"2026-11-16":[4,20],"2026-11-17":[0,12],"2026-11-18":[9,8],"2026-11-19":[7,0],"2026-11-20":[13,18],"2026-11-23":[13,3],"2026-11-24":[12,9],"2026-11-25":[8,3],"2026-11-26":[11,12],"2026-11-27":[0,15],"2026-12-02":[20,3],"2026-12-03":[20,0],"2026-12-04":[18,20],"2026-12-07":[9,17],"2026-12-08":[14,12],"2026-12-09":[9,2],"2026-12-10":[12,11],"2026-12-11":[15,9],"2026-12-14":[4,0],"2026-12-15":[1,13],"2026-12-16":[20,8],"2026-12-17":[13,16],"2026-12-18":[13,15],"2026-12-21":[3,20],"2026-12-22":[13,1],"2027-01-11":[9,4],"2027-01-12":[13,1],"2027-01-13":[8,3],"2027-01-14":[7,9],"2027-01-15":[15,20],"2027-01-18":[3,0],"2027-01-19":[1,13],"2027-01-20":[17,8],"2027-01-21":[11,12],"2027-01-22":[0,18],"2027-01-26":[17,20],"2027-01-27":[9,1],"2027-01-28":[2,3],"2027-01-29":[0,11],"2027-01-30":[18,9],"2027-02-01":[3,13],"2027-02-02":[12,0],"2027-02-03":[2,3],"2027-02-04":[16,20],"2027-02-05":[18,13],"2027-02-08":[4,20],"2027-02-09":[1,9],"2027-02-10":[3,8],"2027-02-11":[11,13],"2027-02-12":[20,9],"2027-02-15":[9,3],"2027-02-16":[12,14],"2027-02-17":[17,8],"2027-02-18":[20,12],"2027-02-19":[13,18],"2027-02-22":[0,17],"2027-02-23":[13,1],"2027-02-24":[8,17],"2027-02-25":[13,11],"2027-02-26":[9,0],"2027-03-08":[13,3],"2027-03-09":[1,0],"2027-03-10":[9,2],"2027-03-11":[11,9],"2027-03-12":[13,9],"2027-03-15":[17,9],"2027-03-16":[12,14],"2027-03-17":[3,2],"2027-03-18":[0,7],"2027-03-19":[9,18],"2027-03-22":[0,4],"2027-03-23":[13,1],"2027-03-24":[8,17],"2027-03-25":[20,11],"2027-03-26":[9,0],"2027-03-29":[3,20],"2027-03-30":[14,12],"2027-03-31":[8,2],"2027-04-01":[0,20],"2027-04-02":[9,13],"2027-04-05":[0,3],"2027-04-06":[1,13],"2027-04-07":[3,2],"2027-04-08":[11,13],"2027-04-09":[0,20],"2027-04-12":[20,17],"2027-04-13":[13,1],"2027-04-14":[17,8],"2027-04-15":[9,7],"2027-04-16":[20,0],"2027-04-19":[4,9],"2027-04-20":[9,1],"2027-04-21":[2,8],"2027-04-22":[0,11],"2027-04-23":[13,20],"2027-05-05":[2,3],"2027-05-06":[20,11],"2027-05-07":[0,9],"2027-05-10":[20,4],"2027-05-11":[1,13],"2027-05-12":[8,17],"2027-05-13":[16,13],"2027-05-14":[20,0],"2027-05-17":[3,9],"2027-05-18":[13,1],"2027-05-19":[2,9],"2027-05-20":[11,9],"2027-05-21":[0,13],"2027-05-24":[17,0],"2027-05-25":[9,1],"2027-05-26":[3,2],"2027-05-27":[12,13],"2027-05-28":[20,9],"2027-05-31":[9,13],"2027-06-02":[17,8],"2027-06-03":[11,0],"2027-06-04":[9,0],"2027-06-07":[3,20],"2027-06-08":[13,1],"2027-06-09":[2,17],"2027-06-10":[9,12],"2027-06-11":[0,20],"2027-06-14":[0,4],"2027-06-15":[1,14],"2027-06-16":[3,2],"2027-06-17":[16,0]},"l":{"2026-09-08":[6,8],"2026-09-09":[7,11],"2026-09-10":[1,6],"2026-09-11":[4,12],"2026-09-14":[11,12],"2026-09-15":[19,6],"2026-09-16":[7,11],"2026-09-17":[1,6],"2026-09-18":[5,2],"2026-09-21":[19,12],"2026-09-22":[17,7],"2026-09-23":[18,7],"2026-09-24":[3,6],"2026-09-25":[2,5],"2026-09-28":[12,19],"2026-09-29":[8,17],"2026-09-30":[7,4],"2026-10-01":[6,10],"2026-10-02":[19,5],"2026-10-06":[8,17],"2026-10-07":[11,18],"2026-10-08":[3,19],"2026-10-09":[5,2],"2026-10-12":[15,12],"2026-10-13":[17,8],"2026-10-14":[7,11],"2026-10-15":[1,6],"2026-10-16":[2,6],"2026-11-02":[5,15],"2026-11-03":[17,7],"2026-11-04":[18,11],"2026-11-05":[10,3],"2026-11-06":[2,6],"2026-11-09":[12,19],"2026-11-10":[8,17],"2026-11-11":[11,4],"2026-11-12":[6,1],"2026-11-13":[19,2],"2026-11-16":[5,12],"2026-11-17":[6,19],"2026-11-18":[4,18],"2026-11-19":[10,6],"2026-11-20":[5,2],"2026-11-23":[19,15],"2026-11-24":[17,8],"2026-11-25":[7,11],"2026-11-26":[19,1],"2026-11-27":[6,5],"2026-12-02":[18,11],"2026-12-03":[6,10],"2026-12-04":[2,5],"2026-12-07":[15,12],"2026-12-08":[8,17],"2026-12-09":[7,18],"2026-12-10":[3,19],"2026-12-11":[5,6],"2026-12-14":[12,5],"2026-12-15":[17,8],"2026-12-16":[11,4],"2026-12-17":[1,10],"2026-12-18":[6,2],"2026-12-21":[15,5],"2026-12-22":[7,6],"2027-01-11":[5,12],"2027-01-12":[8,17],"2027-01-13":[18,11],"2027-01-14":[6,1],"2027-01-15":[6,2],"2027-01-18":[19,15],"2027-01-19":[19,7],"2027-01-20":[4,7],"2027-01-21":[19,3],"2027-01-22":[2,5],"2027-01-26":[12,15],"2027-01-27":[17,8],"2027-01-28":[11,18],"2027-01-29":[6,1],"2027-01-30":[5,6],"2027-02-01":[12,19],"2027-02-02":[17,8],"2027-02-03":[7,11],"2027-02-04":[19,3],"2027-02-05":[6,5],"2027-02-08":[5,12],"2027-02-09":[5,19],"2027-02-10":[11,4],"2027-02-11":[1,6],"2027-02-12":[2,6],"2027-02-15":[12,19],"2027-02-16":[8,17],"2027-02-17":[4,7],"2027-02-18":[10,6],"2027-02-19":[5,2],"2027-02-22":[15,5],"2027-02-23":[6,19],"2027-02-24":[11,7],"2027-02-25":[19,1],"2027-02-26":[2,6],"2027-03-08":[19,5],"2027-03-09":[8,17],"2027-03-10":[11,7],"2027-03-11":[19,3],"2027-03-12":[2,6],"2027-03-15":[12,19],"2027-03-16":[6,5],"2027-03-17":[7,4],"2027-03-18":[6,1],"2027-03-19":[5,2],"2027-03-22":[5,19],"2027-03-23":[17,8],"2027-03-24":[11,7],"2027-03-25":[19,10],"2027-03-26":[6,5],"2027-03-29":[12,15],"2027-03-30":[8,17],"2027-03-31":[7,11],"2027-04-01":[6,19],"2027-04-02":[6,2],"2027-04-05":[12,19],"2027-04-06":[8,7],"2027-04-07":[11,7],"2027-04-08":[1,19],"2027-04-09":[2,5],"2027-04-12":[15,5],"2027-04-13":[17,8],"2027-04-14":[7,11],"2027-04-15":[10,6],"2027-04-16":[5,2],"2027-05-05":[7],"2027-05-06":[3],"2027-05-07":[2],"2027-05-10":[19],"2027-05-11":[7],"2027-05-12":[4],"2027-05-13":[1],"2027-05-14":[6],"2027-05-17":[19],"2027-05-18":[17],"2027-05-19":[18],"2027-05-20":[10],"2027-05-21":[5],"2027-05-24":[12],"2027-05-25":[8],"2027-05-26":[11],"2027-05-27":[6],"2027-05-28":[5],"2027-05-31":[15],"2027-06-02":[4],"2027-06-03":[3],"2027-06-04":[2]},"gn":{},"ln":{"2026-10-19":"Săptămâna verde","2027-04-19":"Școala altfel"}};
+const MN=["ianuarie","februarie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"];
+const DN=["duminică","luni","marți","miercuri","joi","vineri","sâmbătă"];
+const WH=["L","Ma","Mi","J","V","S","D"];
+const $=id=>document.getElementById(id);
+const pad=n=>String(n).padStart(2,"0");
+const key=(y,m,d)=>y+"-"+pad(m+1)+"-"+pad(d);
+const now=new Date();const todayK=key(now.getFullYear(),now.getMonth(),now.getDate());
+const MIN=[2026,8],MAX=[2027,5];
+let view="a",who="",sel=todayK,ym=[now.getFullYear(),now.getMonth()];
+try{who=localStorage.getItem("srv_who")||"";view=localStorage.getItem("srv_view")||"a"}catch(e){}
+const idx=v=>v[0]*12+v[1];
+if(idx(ym)<idx(MIN))ym=MIN.slice();if(idx(ym)>idx(MAX))ym=MAX.slice();
+if(sel.slice(0,7)!==ym[0]+"-"+pad(ym[1]+1))sel=key(ym[0],ym[1],1);
+D.n.forEach((n,i)=>{const o=document.createElement("option");o.value=i;o.textContent=n;$("who").appendChild(o)});
+$("who").value=who;
+function save(){try{localStorage.setItem("srv_who",who);localStorage.setItem("srv_view",view)}catch(e){}}
+const has=(s,k)=>who!==""&&(D[s][k]||[]).includes(+who);
+function render(){
+ document.querySelectorAll("#seg button").forEach(b=>b.classList.toggle("on",b.dataset.k===view));
+ const[y,m]=ym;$("mt").textContent=MN[m]+" "+y;theme(m);
+ $("prev").disabled=idx(ym)<=idx(MIN);$("next").disabled=idx(ym)>=idx(MAX);
+ const g=$("g");g.innerHTML="";
+ WH.forEach(h=>{const e=document.createElement("div");e.className="dh";e.textContent=h;g.appendChild(e)});
+ const first=(new Date(y,m,1).getDay()+6)%7,nd=new Date(y,m+1,0).getDate();
+ for(let i=0;i<first;i++){const e=document.createElement("div");e.className="c e";g.appendChild(e)}
+ for(let d=1;d<=nd;d++){
+  const k=key(y,m,d),wd=(new Date(y,m,d).getDay()+6)%7;
+  const gg=(D.g[k]||[]),ll=(D.l[k]||[]);
+  const showG=view!=="l",showL=view!=="g";
+  const mine=(showG&&has("g",k))||(showL&&has("l",k));
+  const any=(showG&&(gg.length||D.gn[k]))||(showL&&(ll.length||D.ln[k]));
+  const c=document.createElement("div");
+  c.className="c"+(wd>4?" we":"")+(!any&&wd<=4?" off":"")+(k===todayK?" tod":"")+(k===sel?" sel":"")+(mine?" me":"");
+  let dots="";
+  if(showG)gg.forEach(()=>dots+='<i class="d g"></i>');
+  if(showL)ll.forEach(()=>dots+='<i class="d l"></i>');
+  const nt=(showG&&D.gn[k])||(showL&&D.ln[k])||"";
+  c.innerHTML='<span class="n">'+d+'</span>'+(SP[k]?'<span class="em">'+SP[k]+'</span>':'')+'<div>'+(nt&&!dots?'<span class="nt">'+nt.split(" ")[0].slice(0,5)+'.</span>':'')+'<div class="dots">'+dots+'</div></div>';
+  c.onclick=()=>{sel=k;render()};
+  g.appendChild(c);
+ }
+ detail();upcoming();
+}
+function sch(s,cls,title,k){
+ const p=(D[s][k]||[]),n=D[s+"n"][k];
+ let h='<div class="sc '+cls+'"><small>'+title+'</small>';
+ if(n)h+='<div>'+n+'</div>';
+ p.forEach(i=>h+='<div><span class="'+(String(i)===String(who)?"hl":"")+'">'+D.n[i]+'</span></div>');
+ if(!p.length&&!n)h+='<div class="mut">Nimeni în această zi</div>';
+ return h+'</div>';
+}
+function detail(){
+ const[y,m,d]=sel.split("-").map(Number);const dt=new Date(y,m-1,d);
+ let h='<h2>'+DN[dt.getDay()]+', '+d+' '+MN[m-1]+(sel===todayK?' · azi':'')+'</h2>';
+ if(view!=="l")h+=sch("g","g","Școala gimnazială",sel);
+ if(view!=="g")h+=sch("l","l","Liceul",sel);
+ $("det").innerHTML=h;
+}
+function upcoming(){
+ const box=$("upc");
+ if(who===""){box.hidden=true;return}
+ const rows=[];
+ for(const s of["g","l"]){if(view==="g"&&s==="l"||view==="l"&&s==="g")continue;
+  for(const k in D[s])if(k>=todayK&&D[s][k].includes(+who))rows.push([k,s])}
+ rows.sort();
+ let h='<h2>'+D.n[who]+' — următoarele servicii</h2>';
+ if(!rows.length)h+='<div class="mut">Nu mai are servicii programate.</div>';
+ else{h+='<ul class="up">';rows.slice(0,8).forEach(([k,s])=>{const[y,m,d]=k.split("-").map(Number);
+  h+='<li><span>'+DN[new Date(y,m-1,d).getDay()]+', '+d+' '+MN[m-1]+'</span><span class="tag '+s+'">'+(s==="g"?"Gimnaziu":"Liceu")+'</span></li>'});
+  h+='</ul>';if(rows.length>8)h+='<div class="mut" style="margin-top:6px">…și încă '+(rows.length-8)+' zile</div>'}
+ box.innerHTML=h;box.hidden=false;
+}
+$("seg").onclick=e=>{const k=e.target.dataset.k;if(k){view=k;save();render()}};
+$("who").onchange=e=>{who=e.target.value;save();render()};
+$("prev").onclick=()=>{ym=ym[1]===0?[ym[0]-1,11]:[ym[0],ym[1]-1];sel=key(ym[0],ym[1],1);render()};
+$("next").onclick=()=>{ym=ym[1]===11?[ym[0]+1,0]:[ym[0],ym[1]+1];sel=key(ym[0],ym[1],1);render()};
+let sx=null;const gr=$("g");
+gr.addEventListener("touchstart",e=>{sx=e.touches[0].clientX},{passive:true});
+gr.addEventListener("touchend",e=>{if(sx===null)return;const dx=e.changedTouches[0].clientX-sx;sx=null;
+ if(Math.abs(dx)>60)(dx<0?$("next"):$("prev")).click()},{passive:true});
+const TH={
+8:{n:"Început de an școlar",e:"📚✏️🎒",g:["#3a6ea5","#7fb0e0"],t:"rgba(80,140,210,.10)"},
+9:{n:"Toamnă aurie",e:"🍂🍁🍄",g:["#b9651f","#e3a53a"],t:"rgba(220,150,50,.12)",f:["🍂","🍁"]},
+10:{n:"Toamnă târzie",e:"🍁🌰🧣",g:["#8a4b2a","#c9843f"],t:"rgba(180,110,60,.11)",f:["🍁"]},
+11:{n:"Crăciun fericit!",e:"🎄🎁🎅⭐",g:["#c0392b","#1e7a4a"],t:"rgba(200,50,50,.14)",f:["❄️","❄️","🎁","⭐"]},
+0:{n:"Iarnă fericită!",e:"❄️⛄🧣",g:["#3b78c4","#8fc3f0"],t:"rgba(110,170,230,.18)",f:["❄️"]},
+1:{n:"Dragoste și bucurie",e:"💕❤️💌",g:["#d63a6e","#ff8fb1"],t:"rgba(240,100,150,.14)",f:["❤️","💗","💕"],up:1},
+2:{n:"Mărțișor fericit!",e:"🌸🌷🐞",tw:1,t:"rgba(220,60,70,.10)",f:["🌸","🌷"]},
+3:{n:"Paște fericit!",e:"🐣🥚🐰🌷",g:["#f2b73f","#7cc47a"],t:"rgba(130,200,110,.15)",f:["🥚","🌷","🐣"]},
+4:{n:"Mai, lună înflorită",e:"🌷🌼🦋",g:["#5aa86b","#b6dc7b"],t:"rgba(120,190,100,.12)"},
+5:{n:"Vacanța se apropie",e:"☀️🏖️🍉",g:["#f08a24","#f5cf4a"],t:"rgba(250,190,60,.14)"}};
+const SP={"2026-12-01":"🇷🇴","2026-12-06":"🎅","2026-12-24":"🎄","2026-12-25":"🎄","2026-12-31":"🎆","2027-01-01":"🎆","2027-02-14":"💘","2027-03-01":"🌸","2027-03-08":"💐","2027-04-30":"🥚","2027-05-02":"🐣"};
+let lastT=-1;
+function theme(m){
+ const t=TH[m],b=$("ban");
+ document.documentElement.style.setProperty("--tint",t?t.t:"transparent");
+ if(!t){b.hidden=true}else{b.hidden=false;b.style.background=t.tw?"repeating-linear-gradient(135deg,#c62828 0 12px,#fff 12px 24px)":"linear-gradient(100deg,"+t.g[0]+","+t.g[1]+")";b.innerHTML='<span class="chip">'+t.e+' '+t.n+'</span>'}
+ if(lastT===m)return;lastT=m;
+ const f=$("fall");f.innerHTML="";
+ if(!t||!t.f||matchMedia("(prefers-reduced-motion:reduce)").matches)return;
+ for(let i=0;i<16;i++){const s=document.createElement("span");s.textContent=t.f[i%t.f.length];if(t.up)s.className="rs";
+  s.style.cssText="left:"+Math.random()*100+"%;font-size:"+(12+Math.random()*14)+"px;animation-duration:"+(9+Math.random()*9)+"s;animation-delay:-"+Math.random()*14+"s;--dx:"+(Math.random()*60-30)+"px";f.appendChild(s)}
+}
+render();
+</script>
+</body>
+</html>
